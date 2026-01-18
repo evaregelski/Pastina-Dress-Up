@@ -7,7 +7,7 @@ This is my first JavaScript project ever! I wanted to make a simple and cute dre
 <img width="896" height="807" alt="image" src="https://github.com/user-attachments/assets/1cdf2e89-e9e4-47d1-a5ca-99b22c113112" />
 
 
-**Link to project:** https://evaregelski.github.io/
+**Link to project:** https://evaregelski.github.io/](https://vermillion-lolly-1c3a20.netlify.app/
 
 
 ## How It's Made:
