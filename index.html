@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="main-container">
+        <header class="site-header">
+            <h1>what should i wear today?</h1>
+        </header>
+        <div class="display-wrap">
+            <button id="bgPrevBtn" class="bg-nav" aria-label="Previous background">←</button>
+            <div class="outfit-display">
+                <img id="pastina" class="pastina-image" src="" alt="pastina" />
+                <img id="addOns" class="addons-image" src="" alt="accessories" />
+                <img id="tops" class="tops-image" src="" alt="tops" />
+                <img id="bottoms" class="bottoms-image" src="" alt="bottoms" />
+            </div>
+            <button id="bgNextBtn" class="bg-nav" aria-label="Next background">→</button>
+        </div>
+
+        <div class="button-container">
+                                <div class="tabs" role="tablist" aria-label="Categories">
+                                        <button class="random-button" id="random-btn">Randomize!</button>
+                                        <div class="tab-row" role="presentation">
+                                            <button class="tab active" data-cat="tops">Tops</button>
+                                            <button class="tab" data-cat="bottoms">Bottoms</button>
+                                            <button class="tab" data-cat="addOns">Accessories</button>
+                                        </div>
+                                </div>
+
+                <div class="controls-panel">
+                    <div class="controls">
+                        <div class="addons-container">
+                            <div class="carousel-buttons">
+                                <button id="0prevBtn">←</button>
+                                <button id="0noneBtn" class="none-button">None</button>
+                                <button id="0nextBtn">→</button>
+                            </div>
+                        </div>
+                        <div class="tops-container">
+                            <div class="carousel-buttons">
+                                <button id="1prevBtn">←</button>
+                                <button id="1noneBtn" class="none-button">None</button>
+                                <button id="1nextBtn">→</button>
+                            </div>
+                        </div>
+                        <div class="bottoms-container">
+                            <div class="carousel-buttons">
+                                <button id="2prevBtn">←</button>
+                                <button id="2noneBtn" class="none-button">None</button>
+                                <button id="2nextBtn">→</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>  
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

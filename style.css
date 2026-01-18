@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+html {
+  background: linear-gradient(90deg, #fce7f3 0%, #d5abf7 100%);
+  display: flex;
+  justify-content: center;
+  font-family: 'VT323', monospace;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  /* this prevents horizontal scrolling */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  align-items: center;
+}
+
+.main-container {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  gap: 0px; 
+  width: 100%;
+  padding: 0 30px 12px;
+  position: relative;
+}
+
+.dress-up-container {
+  position: absolute;
+  top: 0;
+  width: 500px;
+  height: 500px;
+  position: relative;
+
+}
+
+.addons-container,
+.tops-container,
+.bottoms-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.controls .addons-container,
+.controls .tops-container,
+.controls .bottoms-container {
+  transform: none !important;
+  position: static;
+  margin: 0;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  align-items: center;
+  transform: translateY(0);
+  margin-top: 0;
+}
+
+.pastina-image,
+.tops-image,
+.bottoms-image,
+.addons-image {
+  width: 90%;
+  max-width: 200px;
+  aspect-ratio: 4 / 4;
+  object-fit: contain;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+.addons-image {
+  z-index: 10;
+}
+
+button {
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: inherit;
+  color: hotpink;
+  background-color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #eba7f1;
+  color: white;
+}
+
+.random-button:hover{
+  background: linear-gradient(90deg, #FF9FFD 0%, #C631E4 100%);
+  color: white;
+  border: 2px solid #E021DD;
+}
+
+.random-button {
+  background: linear-gradient(90deg, #4C3CD8 0%, #1D20BD 100%);
+  border: 2px solid #170E70;
+  color: white;
+  font-family: inherit;
+  position: relative;
+  margin: 0;
+  border-radius: 6px;
+  padding: 8px 12px;
+}
+
+.carousel-buttons {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin: 0px;
+  justify-content: center;
+  width: auto;
+  padding: 8px;
+  padding-top: 20px;
+  padding-bottom: 1px;
+  border: 3px solid #EB4A90;
+  border-top: 0px;
+  border-radius: 0px;
+  background: linear-gradient(90deg, rgb(255, 226, 243) 0%, rgb(255, 193, 211) 100%);
+  max-width: 274px;
+}
+
+.tab-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+}
+
+.random-button {
+  align-self: center;
+}
+.tab {
+  background: #FFE5F5;
+  border: 2px solid #EB4A90;
+  color: #EB4A90;
+  padding: 6px 12px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  cursor: pointer;
+}
+.tab.active {
+  background: #EB4A90;
+  color: white;
+  border-color: #EB4A90;
+}
+
+/* this hides non-active containers */
+.hidden { display: none !important; }
+
+/* this holds the carousel buttons for the outfit selection */
+.controls-panel {
+  background: linear-gradient(90deg, #FFB4CC 0%, #f889c1 50%, #FFB4CC 100%);
+  border: 3px solid #EB4A90;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  padding: 0px 28px;
+  padding-bottom: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  width: 80%;
+  max-width: 274px;
+  margin-top: -20px;
+  
+}
+
+.controls { display: flex; gap: 12px; align-items: center; }
+
+.carousel-buttons { padding: 6px 8px; background: transparent; border-radius: 8px; }
+.carousel-buttons button { background: #C50D35; border: 2px solid #930322; padding: 4px 15px; border-radius: 6px; color: white; font-family: inherit; font-size: 2rem; line-height: 1; }
+.carousel-buttons button:hover { background: #930322; color: white; border-color: #930322; }
+
+.carousel-buttons .none-button {
+  background: transparent;
+  border: 2px dashed #1D20BD;
+  color: #170E70;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-family: inherit;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.carousel-buttons .none-button:hover {
+  background: #4C3CD8;
+  color: white;
+  border-color: #170E70;
+}
+
+.random-button {
+  z-index: 20;
+  margin-bottom: 6px;
+}
+
+.site-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+.site-header h1 {
+  font-size: 1.4rem;
+  color: #2022BF;
+  margin: 0;
+  padding: 6px 12px;
+  text-transform: none;
+}
+
+/* border around header */
+.site-header {
+  border: 3px solid #EB4A90;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  padding: 6px 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+  background: linear-gradient(90deg, rgb(255, 204, 229) 0%, rgb(255, 169, 219) 50%, rgb(255, 204, 229) 100%);
+  max-width: 270px; 
+  margin: 0 auto 0;
+  border-bottom-left-radius: 0; 
+  border-bottom-right-radius: 0;
+}
+
+/* border around the outfit display */
+.outfit-display {
+  width: 282px; 
+  height: 282px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #EB4A90;
+  border-top: none; 
+  border-radius: 0px;
+  padding: 4px;
+  background: linear-gradient(90deg, rgb(255, 242, 198) 0%, rgb(255, 210, 159) 100%);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+/* holds the outfit display and background nav buttons */
+.display-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.bg-nav {
+  background: #fff;
+  border: 3px solid #2022BF;
+  color: #2022BF;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+}
+.bg-nav:hover { background: #1D20BD; }
